@@ -16,7 +16,7 @@ A site to share pictures/posts from the user that can be liked and seen by other
 
 This webpage is deployed to GitHup pages
 
-- Deployment Link:
+- [Deployment Link](https://derian-king.github.io/se_project_spots/)
 
 **Figma**
 
