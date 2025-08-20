@@ -17,7 +17,7 @@
   font-weight: 500;
 }
 
-.modal_is-open {
+.modal_is-opened {
   visibility: visible;
 }
 
