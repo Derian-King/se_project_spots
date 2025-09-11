@@ -13,10 +13,14 @@
   font-size: 20px;
   line-height: 1;
   color: #212121;
-  padding: 10px;
+  padding: 0 10px;
   font-weight: 500;
   opacity: 0;
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+
+.modal_type_preview {
+  padding: 0 16px;
 }
 
 .modal_is-opened {
@@ -31,27 +35,39 @@
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
-  padding: 32px 50px;
-}
-
-.modal__row {
-  display: flex;
-  justify-content: space-between;
+  padding: 36px 50px 32px;
+  position: relative;
 }
 
 .modal__close-btn {
-  background-image: url(../images/close-icon.svg);
-  padding: 0;
-  top: 32px;
-  right: 50px;
   width: 40px;
   height: 40px;
+  background: transparent url(../images/close-icon.svg) center no-repeat;
+  background-size: 35px 35px;
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  padding: 0;
+  margin: 0;
+  opacity: 40%;
   color: #212121;
-  background-color: transparent;
   border: none;
 }
+
+.modal__close-btn_type_preview {
+  background-image: url(../images/close-icon-white.svg);
+  top: 0;
+  right: -12.5px;
+  opacity: 100%;
+}
+
 .modal__close-btn:hover {
   cursor: pointer;
+  opacity: 100%;
+}
+
+.modal__close-btn_type_preview:hover {
+  opacity: 40%;
 }
 
 .modal__submit-btn {
@@ -106,6 +122,33 @@
   color: #2121214d;
 }
 
+.modal__image-container {
+  position: relative;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.modal__image {
+  max-height: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  max-width: fit-content;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #212121;
+  padding: 4px 8px;
+  margin: 8px 0 0;
+  border-radius: 8px;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 300px) {
   .modal__container {
     padding: 12px;
@@ -130,7 +173,27 @@
     margin: 10px 0;
   }
 
+  .modal__close-btn {
+    top: 22px;
+    right: 12px;
+  }
+
   .modal__submit-btn {
     max-width: none;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  /* Placed below the 480px media query to avoid being overwritten */
+  .modal__close-btn_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal_type_preview {
+    max-width: unset;
+  }
+  .modal__image-container {
+    padding: 0;
   }
 }
