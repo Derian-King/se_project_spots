@@ -18,9 +18,10 @@ This webpage is deployed to GitHup pages
 
 - [Deployment Link](https://derian-king.github.io/se_project_spots/)
 
-## Video About Project
+## Project Pitch Video
 
-- [Link to video](https://drive.google.com/file/d/1p97U_1wJMHRWDDosDVuhfCWrmpUy9b-i/view?usp=sharing)
+Check out [this video](https://drive.google.com/file/d/1biEjs-EJPOBlt3jaLKEQvbwNjqnKetM_/view?usp=drive_link), where I describe my
+project and some challenges I faced while building it.
 
 **Figma**
 
